@@ -1,0 +1,22 @@
+$primary-color: #009879;
+$secondary-color: white;
+$font-family: "Times New Roman", Times, serif;
+* {
+  box-sizing: border-box;
+}
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: grid;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

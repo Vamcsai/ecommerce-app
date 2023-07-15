@@ -1,0 +1,126 @@
+.add-book-form-container {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(242, 242, 242, 0.7);
+  position: fixed;
+  top: 0px;
+}
+.add-book-form-main {
+  border-radius: 30px;
+  background-color: #009879;
+  padding: 30px;
+  width: 400px;
+  border: 2px solid white;
+  form > label {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  #bookadd-button {
+    width: 100%;
+    background-color: white;
+    color: #009879;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    height: 38px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="file"]{
+    width: 100%;
+    margin: 10px 0;
+    background-color: white;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #009879;
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type=file]::file-selector-button:hover {
+    transform: translateY(-1px);
+  }
+  #bookadd-button:hover {
+    transform: translateY(-1px);
+  }
+}
+.add-book-form-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  span {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #add-book-form-close-button{
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0px 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  #add-book-form-close-button:hover {
+    transform: translateY(-1px);
+  }
+
+}
+
+.addbook-form-result{
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.button-disable {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+#addbook-button-loading{
+  border: 5px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-top-color: #ccc;
+  border-left-color: #ccc;
+  animation: spin 1s infinite ease-in;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

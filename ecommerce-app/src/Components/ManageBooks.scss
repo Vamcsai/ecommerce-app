@@ -1,0 +1,102 @@
+.add-books-container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+.add-books-header {
+  height: 60px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  border: 3px solid white;
+  background-color: #009879;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 25px 25px 0 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  h2 {
+    margin: auto 0;
+    color: white;
+    margin-left: 30px;
+  }
+  button {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #009879;
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+    height: 35px;
+    margin: auto 30px auto 0;
+    transition: all 250ms;
+  }
+  button:hover {
+    transform: translateY(-1px);
+  }
+  button:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    transform: translateY(0);
+  }
+}
+
+.add-books-body {
+  table-layout: fixed;
+  border-collapse: separate;
+  border: 1px solid white;
+  border-radius: 0 0 25px 25px;
+  margin: 20px auto;
+  font-size: 1em;
+  font-family: sans-serif;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+  }
+  th {
+    font-size: 20px;
+  }
+  th, td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #009879;
+    font-weight: 600;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  tbody tr:hover{
+    background-color: #f2f2f2;
+  }
+  tbody img{
+    height: 50px;
+    width: 50px;
+  }
+}
+.bookselect{
+  width: 5%;
+}
+.bookid, .bookprice{
+  width: 12.5px;
+}
+.bookimage{
+  width: 20%;
+}
+.bookname, .bookauthor{
+  width: 25%;
+}
