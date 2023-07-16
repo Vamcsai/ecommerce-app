@@ -14,6 +14,7 @@ export default function ManageBooks() {
       await axios
         .get("http://localhost:3001/api/getbooks")
         .then((res) => {
+          console.log(res)
           setbooksData(res.data.result);
         })
         .catch((err) => {

@@ -98,7 +98,7 @@ export default function Login() {
       <div className="form-container">
         <input type="checkbox" checked={ischecked} readOnly id="check" />
         <div className="login form">
-          <header>Login</header>
+          <header> <span> <img src="ecommerce-app/ecommerce-app/public/books.png"  width="300" height="60"></img></span></header>
           <form onSubmit={userLogin}>
             <input
               type="text"
@@ -137,7 +137,7 @@ export default function Login() {
               required
             />
             <input
-              type="text"
+              type="password"
               name="signuppassword"
               value={signUpData.signuppassword}
               onChange={signuphandleChange}

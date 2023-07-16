@@ -1,7 +1,7 @@
 .form-outer-container {
   height: 100%;
   width: 100%;
-  background: #006653;
+  background: #eee;
   .form-container {
     position: absolute;
     top: 50%;
@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     max-width: 430px;
     width: 100%;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 7px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     .signup {
@@ -34,7 +34,7 @@
       }
       input,
       select {
-        height: 60px;
+        height: 50px;
         width: 100%;
         padding: 0 15px;
         font-size: 17px;
@@ -61,7 +61,7 @@
         text-decoration: underline;
       }
       input.button {
-        color: #fff;
+        color: #f1f1f1;
         background: #009579;
         font-size: 1.2rem;
         font-weight: 500;
@@ -71,7 +71,7 @@
         transition: 0.4s;
       }
       input.button:hover {
-        background: #006653;
+         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
       }
 
       .button-loader {
@@ -86,7 +86,7 @@
   }
 }
 .signup-result{
-  font-size: 22px;
+  font-size: 1.5rem;
   text-align: center;
   color: red;
   margin-top: 10px;
