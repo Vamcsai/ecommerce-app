@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import App from "./Components/App";
+import './Resources/fonts/Main-font/SourceCodePro-VariableFont_wght.ttf'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

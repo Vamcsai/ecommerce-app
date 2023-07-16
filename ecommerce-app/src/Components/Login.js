@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "./Contexts/AuthContextProvider";
 import { useNavigate } from "react-router-dom";
-
+import loginLogo from "../Resources/logo-login.png"
 export default function Login() {
   const userNav = useNavigate();
   const { user, setUser, isAuth, setIsAuth } = useContext(AuthContext);
@@ -98,7 +98,7 @@ export default function Login() {
       <div className="form-container">
         <input type="checkbox" checked={ischecked} readOnly id="check" />
         <div className="login form">
-          <header> <span> <img src="ecommerce-app/ecommerce-app/public/books.png"  width="300" height="60"></img></span></header>
+          <header> <span className="login-logo"> <img src={loginLogo} alt="Library" width="100%" className="login_image" /> </span></header>
           <form onSubmit={userLogin}>
             <input
               type="text"
@@ -126,8 +126,7 @@ export default function Login() {
           {isFormOp ? <div className="signup-result">{formOp}</div> : <></>}
         </div>
         <div className="signup form">
-          <header>Signup</header>
-          <form onSubmit={signUp}>
+          <header> <span className="login-logo"> <img src={loginLogo} alt="Library" width="100%" className="login_image" /> </span></header><form onSubmit={signUp}>
             <input
               type="text"
               name="signupusername"

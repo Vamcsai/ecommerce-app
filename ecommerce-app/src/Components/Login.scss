@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
   background: #eee;
+
   .form-container {
     position: absolute;
     top: 50%;
@@ -12,26 +13,33 @@
     background: #f9f9f9;
     border-radius: 7px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
     .signup {
       display: none;
     }
-    #check:checked ~ .signup {
+
+    #check:checked~.signup {
       display: block;
     }
-    #check:checked ~ .login {
+
+    #check:checked~.login {
       display: none;
     }
+
     #check {
       display: none;
     }
+
     .form {
       padding: 2rem;
+
       header {
         font-size: 2rem;
         font-weight: 500;
         text-align: center;
         margin-bottom: 1.5rem;
       }
+
       input,
       select {
         height: 50px;
@@ -43,23 +51,29 @@
         border-radius: 6px;
         outline: none;
       }
+
       select {
         background-color: #fff;
       }
+
       input:focus {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
       }
+
       select:focus {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
       }
+
       a {
         font-size: 16px;
         color: #009579;
         text-decoration: none;
       }
+
       a:hover {
         text-decoration: underline;
       }
+
       input.button {
         color: #f1f1f1;
         background: #009579;
@@ -70,8 +84,9 @@
         cursor: pointer;
         transition: 0.4s;
       }
+
       input.button:hover {
-         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
       }
 
       .button-loader {
@@ -85,19 +100,23 @@
     }
   }
 }
-.signup-result{
-  font-size: 1.5rem;
+
+.signup-result {
+  font-size: 1rem;
   text-align: center;
-  color: red;
+  color: #e3242b;
   margin-top: 10px;
 }
+
 .signup-text {
   font-size: 17px;
   text-align: center;
+
   span {
     color: #009579;
     cursor: pointer;
   }
+
   span:hover {
     color: black;
   }
@@ -107,6 +126,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

@@ -4,6 +4,10 @@ $font-family: "Times New Roman", Times, serif;
 * {
   box-sizing: border-box;
 }
+@font-face {
+  $font-family: "main-font";
+  src: url('./Resources/fonts/Main-font/SourceCodePro-VariableFont_wght.ttf');
+}
 body,
 #root {
   margin: 0;
@@ -11,7 +15,7 @@ body,
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
-  font-family: $font-family;
+  font-family: "main-font";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
